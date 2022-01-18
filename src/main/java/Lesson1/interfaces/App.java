@@ -5,9 +5,13 @@ public class App {
         Student student = new Student();
         Pupil pupil = new Pupil();
 
-        Studyable [] studyables = new Studyable[] {student,pupil};
-        for (Studyable studyable:studyables){
+        Studyable[] studyables = new Studyable[]{pupil, student};
+        for (Studyable studyable : studyables) {
             studyable.study();
+
         }
+        System.out.println(1);
+        student.workVeryHard();
     }
+
 }
